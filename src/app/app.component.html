@@ -1,0 +1,23 @@
+<nav>
+  <div class="nav-wrapper blue">
+    <div class="container">
+      <a href="#" class="brand-logo">Ng IOT</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">NgUg</a></li>
+        <li><a href="badges.html">Busqueda Profesores</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container" style="height: 100%;">
+  <div class="row" style="height: 100%;display: flex;justify-content:center;align-items: center">
+    <div class="col s6 m6 l12 center-align">
+      <i class="large material-icons" [ngClass]="{'yellow-text':this.leOn == true}" style="font-size: 150px">wb_incandescent</i>
+    </div>
+    <div class="col s6 m6 l12 center-align">
+      <a class="btn-floating btn-large waves-effect waves-light red" (click)="commandVoice()">
+        <i class="large material-icons white-text" >keyboard_voice</i>
+      </a>
+    </div>
+  </div>
+</div>
